@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Bag - Shopping Cart</title>
+    <link rel="stylesheet" href="/assets/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="top-nav">
+            <div class="logo">
+                <a href="/index.html"><img src="/Images/logo.png" alt="Nike" class="nike-logo-img"></a>
+            </div>
+            <nav class="center-nav">
+                <a href="/index.html">New & Featured</a><a href="/Phúc/categories.html">Men</a><a href="/Phúc/categories.html">Women</a><a href="/Phúc/categories.html">Kids</a><a href="/Phúc/promotion.html">Sale</a>
+            </nav>
+            <div class="right-nav">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </div>
+        <div class="shipping-banner">
+            <p>FREE DELIVERY - Applies to orders of 5.000.000₫ or more. <a href="#">View details.</a></p>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="cart-layout">
+            <section class="cart-items">
+                <h1 class="title">Bag</h1>
+                <div class="product-item">
+                    <div class="prod-img">
+                        <img src="/Images/trunner.avif" alt="Nike Metcon 10">
+                    </div>
+                    <div class="prod-info">
+                        <div class="prod-header">
+                            <div>
+                                <h3 class="prod-name">Jordan Trunner LX</h3>
+                                <p class="prod-cat">Women Shoes</p>
+                                <p class="prod-desc">Medium Olive/Sequoia/Black/Neutral Olive</p>
+                                <p class="prod-size">Size 40</p>
+                            </div>
+                            <span class="prod-price">3,063,000₫</span>
+                        </div>
+                        <div class="prod-actions">
+                            <div class="qty"><i class="fa-regular fa-trash-can"></i><span>1</span><button class="btn-qty">+</button></div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <p class="stock-warning">Just a few left. Order soon.</p>
+                    </div>
+                </div>
+                <div class="member-promo">
+                    <i class="fa-solid fa-truck"></i>
+                    <span>Free returns for Nike Members. <a href="#">Learn More</a></span>
+                </div>
+                <div class="favourites-empty">
+                    <h2>Favourites</h2>
+                    <p>There are no items saved to your favourites.</p>
+                </div>
+            </section>
+
+            <aside class="summary">
+                <h1 class="title">Summary</h1>
+                <div class="summary-line"><span>Subtotal <i class="fa-regular fa-circle-question"></i></span><span>4,409,000₫</span></div>
+                <div class="summary-line"><span>Estimated Delivery & Handling</span><span>250,000₫</span></div>
+                <div class="total-line"><span>Total</span><span>4,659,000₫</span></div>
+                <a href="/Huy/checkout.html"><button class="btn-checkout">Member Checkout</button></a>
+            </aside>
+        </main>
+
+        <section class="suggestions">
+            <div class="sugg-header">
+                <h2>You Might Also Like</h2>
+                <div class="sugg-arrows">
+                    <button id="prev-btn" class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="next-btn" class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div id="sugg-grid" class="sugg-grid">
+                <div class="card">
+                    <img src="/Images/sock.avif" alt="">
+                    <h4>Nike Elite 2.0</h4>
+                    <p>Cushioned Crew Socks (1 Pair)</p>
+                    <p class="price">367,000₫ <span class="old">459,000₫</span></p>
+                </div>
+                <div class="card">
+                    <img src="/Images/jordan1low.avif" alt="">
+                    <h4>Air Jordan 1 Low</h4>
+                    <p>Men's Shoes</p>
+                    <p class="price">3,239,000₫</p>
+                </div>
+                <div class="card">
+                    <img src="/Images/mornach.avif" alt="">
+                    <h4>Nike Air Monarch IV</h4>
+                    <p>Men's Workout Shoes</p>
+                    <p class="price">1,909,000₫</p>
+                </div>
+                <div class="card">
+                    <img src="/Images/bia.avif" alt="">
+                    <h4>Nike Air Max Bliss</h4>
+                    <p>Men's Shoes</p>
+                    <p class="price">2,649,000₫</p>
+                </div>
+                <div class="card">
+                    <img src="/Images/gamma.avif" alt="">
+                    <h4>Air Jordan 11 Retro 'Gamma'</h4>
+                    <p>Men's Shoes</p>
+                    <p class="price">6,609,000₫</p>
+                </div>
+            </div>
+        </section>
+
+    
+    </div>
+
+    <footer class="nike-footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Find A Store</a></li>
+                        <li><a href="#">Become A Member</a></li>
+                        <li><a href="#">Running Shoe Finder</a></li>
+                        <li><a href="#">Nike Coaching</a></li>
+                        <li><a href="#">Send Us Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="/Hưng/help.html">Get Help</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="/Việt/about.html">About Nike</a></li>
+                        <li><a href="/Việt/news.html">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Impact</a></li>
+                        <li><a href="#">Report a Concern</a></li>
+                    </ul>
+                </div>
+                <div class="footer-location">
+                    <i class="fa-solid fa-location-dot"></i> Vietnam
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="legal-left">
+                    <span>© 2026 Nike, Inc. All rights reserved</span>
+                </div>
+                <div class="legal-right">
+                    <a href="#">Guides <i class="fa-solid fa-caret-down"></i></a>
+                    <a href="#">Terms of Sale</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Nike Privacy Policy</a>
+                    <a href="#">Privacy Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const grid = document.getElementById('sugg-grid');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+
+            if (grid && prevBtn && nextBtn) {
+                const getScrollAmount = () => {
+                    const firstCard = grid.querySelector('.card');
+                    return firstCard ? firstCard.offsetWidth + 15 : 400;
+                };
+
+                nextBtn.onclick = () => {
+                    grid.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+                };
+
+                prevBtn.onclick = () => {
+                    grid.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+                };
+            }
+        });
+    </script>
+</body>
+</html>

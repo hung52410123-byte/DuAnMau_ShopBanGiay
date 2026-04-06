@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theo dõi đơn hàng - Nike</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/tracking.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="topbar">
+      <div class="top-left"><img src="/Images/jordan.jpg" alt="Jordan"></div>
+      <div class="top-right">
+        <a href="#">Find a Store</a><span>|</span>
+        <a href="/Phúc/help.html">Help</a><span>|</span>
+        <a href="#">Hi, Hưng</a><span>|</span>
+        <a href="/Hưng/profile.html">Profile</a>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="logo"><a href="/index.html"><img src="/Images/logo.png" alt="Nike"></a></div>
+      <ul class="menu">
+        <li><a href="/Phúc/index.html">New & Featured</a></li>
+        <li><a href="/Phúc/categories.html">Men</a></li>
+        <li><a href="/Phúc/categories.html">Women</a></li>
+        <li><a href="/Phúc/categories.html">Kids</a></li>
+        <li><a href="/Phúc/promotion.html">Sale</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="search"><input type="text" placeholder="Search"></div>
+        <div class="icons">
+          <a href="/Hưng/help.html"><span class="material-icons-outlined">favorite_border</span></a>
+          <a href="/Huy/cart.html"><span class="material-icons-outlined">shopping_bag</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TRACKING CONTENT -->
+  <section class="tracking-page">
+    <div class="tracking-container">
+
+      <!-- Back button -->
+      <a href="/Huy/order-history.html" class="back-link">
+        ← Quay lại lịch sử đơn hàng
+      </a>
+
+      <h1>Theo dõi đơn hàng #<span id="orderId">VN987654321</span></h1>
+
+      <!-- Timeline -->
+      <div class="tracking-timeline" id="timeline"></div>
+
+      <!-- Thông tin đơn hàng -->
+      <div class="order-info-box">
+        <h2>Thông tin đơn hàng</h2>
+        <div class="info-grid">
+          <div>
+            <strong>Ngày đặt hàng</strong><br>
+            <span id="orderDate">02/04/2026</span>
+          </div>
+          <div>
+            <strong>Tổng tiền</strong><br>
+            <span id="totalPrice">3,063,000đ</span>
+          </div>
+          <div>
+            <strong>Phương thức thanh toán</strong><br>
+            Thanh toán khi nhận hàng (COD)
+          </div>
+          <div>
+            <strong>Địa chỉ giao hàng</strong><br>
+            <span id="address">123 Nguyễn Trãi, Quận 1, TP. HCM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sản phẩm -->
+      <div class="order-product" id="orderProduct"></div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <hr class="footer-line">
+    <div class="footer-top">
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <a href="#">Find A Store</a>
+        <a href="#">Become A Member</a>
+        <a href="#">Running Shoe Finder</a>
+        <a href="#">Nike Coaching</a>
+        <a href="#">Send Us Feedback</a>
+      </div>
+      <div class="footer-column">
+        <h4>Help</h4>
+        <a href="/Hưng/help.html">Get Help</a>
+        <a href="#">Order Status</a>
+        <a href="#">Delivery</a>
+        <a href="#">Returns</a>
+        <a href="#">Payment Options</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="footer-column">
+        <h4>Company</h4>
+        <a href="/Việt/about.html">About Nike</a>
+        <a href="/Việt/news.html">News</a>
+        <a href="#">Careers</a>
+        <a href="#">Investors</a>
+        <a href="#">Sustainability</a>
+        <a href="#">Impact</a>
+      </div>
+      <div class="footer-country">🇻🇳 Vietnam</div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <p>© 2026 Nike, Inc. All rights reserved</p>
+      <div class="footer-links">
+        <a href="#">Guides</a>
+        <a href="#">Terms of Sale</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Nike Privacy Policy</a>
+        <a href="#">Privacy Settings</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/tracking.js"></script>
+</body>
+</html>

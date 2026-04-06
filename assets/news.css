@@ -1,0 +1,383 @@
+/* Reset cơ bản cho trang News */
+/* Chỉ ảnh hưởng đến body của trang News */
+.news-page {
+  background-color: #fff;
+  margin: 0;
+}
+
+/* Thay vì viết .hero-text (trùng với trang chủ), hãy viết thế này: */
+.news-page .news-hero-container {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #000;
+}
+
+/* Chữ NIKE INC NEWSROOM khổng lồ */
+.news-page .news-main-title {
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -5px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Header của Newsroom không được đè lên Header trang chủ */
+.news-page .news-header {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Các nút hình viên thuốc */
+.news-page .news-filter-pill {
+  background: #1a1a1a;
+  border-radius: 25px;
+  /* ... các thuộc tính khác ... */
+}
+
+/* Header & Hero */
+.news-header {
+  background-color: #000;
+  color: #fff;
+  padding: 0 40px;
+}
+
+.news-top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.news-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-logo {
+  width: 50px;
+  height: auto;
+}
+
+.news-about-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.news-nav-center {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.news-nav-link {
+  color: #8d8d8d;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.news-nav-link.news-active {
+  color: #fff;
+}
+
+.news-hero-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.news-hero-title {
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Thanh Filter Pill Bar */
+.news-filter-container {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.news-filter-pill-bar {
+  background-color: #1a1a1a;
+  width: 100%;
+  max-width: 1200px;
+  height: 54px;
+  border-radius: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 25px;
+}
+
+.news-btn-pill {
+  background: none;
+  border: none;
+  color: #8d8d8d;
+  margin-right: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.news-btn-pill.news-btn-active {
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.news-search-trigger {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Lưới tin tức */
+.news-content-wrapper {
+  max-width: 1400px;
+  margin: 60px auto;
+  padding: 0 40px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.news-image-box {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #eee;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.news-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-category {
+  color: #757575;
+  font-size: 12px;
+  display: block;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+  line-height: 1.3;
+  color: #111;
+}
+
+.news-date {
+  color: #757575;
+  font-size: 13px;
+}
+
+/* Footer */
+.news-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 40px 30px;
+}
+
+.news-footer-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding-bottom: 60px;
+}
+
+.news-footer-links {
+  display: flex;
+  gap: 100px;
+}
+
+.news-footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.news-footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.news-social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.news-social-icon {
+  background: #333;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.news-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  color: #8d8d8d;
+  font-size: 12px;
+}
+
+.news-legal-links {
+  display: flex;
+  gap: 20px;
+}
+
+.news-legal-link {
+  color: #8d8d8d;
+  text-decoration: none;
+}
+
+.news-copyright {
+  margin: 0;
+}
+
+/* ================== DETAIL PAGE ================== */
+
+/* Hero detail (không dùng hero-section cũ) */
+.news-hero-detail {
+  background-color: #000;
+  color: #fff;
+  padding: 140px 40px 100px;
+  text-align: center;
+  position: relative;
+}
+
+.detail-tag {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.detail-title {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -3px;
+  margin: 20px 0 30px;
+  text-transform: uppercase;
+}
+
+.detail-date {
+  font-size: 20px;
+  opacity: 0.9;
+  margin: 0 0 40px;
+}
+
+.detail-copy-link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail-copy-link:hover {
+  text-decoration: underline;
+}
+
+/* What to know section */
+.what-to-know {
+  padding: 80px 40px;
+  background: #fff;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.detail-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.detail-text h2 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.detail-text ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+.detail-text li {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+/* Read more section */
+.read-more-section {
+  padding: 60px 40px;
+  background: #f8f8f8;
+}
+
+.read-more-section h2 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+  .detail-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-hero-detail {
+    padding: 100px 20px 80px;
+  }
+  .detail-title {
+    font-size: 48px;
+  }
+}
+

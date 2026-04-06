@@ -1,0 +1,131 @@
+/* ====================== HELP PAGE ====================== */
+.help-page {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .help-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .help-search {
+    position: relative;
+    max-width: 680px;
+    margin: 0 auto 60px;
+  }
+  
+  .help-search input {
+    width: 100%;
+    padding: 18px 24px 18px 24px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 17px;
+    outline: none;
+  }
+  
+  .help-search .material-icons-outlined {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 26px;
+    color: #707072;
+  }
+  
+  /* Quick Assists */
+  .quick-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .quick-subtitle {
+    color: #707072;
+    margin-bottom: 30px;
+  }
+  
+  .quick-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 40px 60px;
+    margin-bottom: 80px;
+  }
+  
+  .quick-column h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #111;
+  }
+  
+  .quick-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .quick-column li {
+    padding: 8px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .quick-column li:hover {
+    color: #111;
+    text-decoration: underline;
+  }
+  
+  .view-all {
+    color: #111;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  /* Contact Us */
+  .contact-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 60px 0 30px;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .contact-card {
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    transition: 0.3s;
+  }
+  
+  .contact-card:hover {
+    border-color: #111;
+    transform: translateY(-4px);
+  }
+  
+  .contact-card .material-icons-outlined {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: #111;
+  }
+  
+  .contact-card h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .contact-card p {
+    font-size: 15px;
+    color: #555;
+    margin: 6px 0;
+  }

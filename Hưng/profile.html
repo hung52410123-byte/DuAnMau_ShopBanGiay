@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Nike</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/profile.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="topbar">
+      <div class="top-left"><img src="/Images/jordan.jpg" alt="Jordan"></div>
+      <div class="top-right">
+        <a href="#">Find a Store</a><span>|</span>
+        <a href="/Hưng/help.html">Help</a><span>|</span>
+        <a href="/Hưng/profile.html">Hi, Hưng</a><span>|</span>
+        <a href="#">Sign Out</a>
+      </div>
+    </div>
+
+    <div class="navbar">
+        <a href="/index.html"><div class="logo"><img src="/Images/logo.png" alt="Nike"></div></a>
+        <ul class="menu">
+        <li><a href="/index.html">New & Featured</a></li>
+        <li><a href="/Phúc/categories.html">Men</a></li>
+        <li><a href="/Phúc/categories.html">Women</a></li>
+        <li><a href="/Phúc/categories.html">Kids</a></li>
+        <li><a href="/Phúc/promotion.html">Sale</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="search"><a href="/Phúc/search.html"><input type="text" placeholder="Search"></a></div>
+        <div class="icons">
+          <a href="/Huy/Favourites.html"><span class="material-icons-outlined">favorite_border</span></a>
+          <a href="/Huy/cart.html"><span class="material-icons-outlined">shopping_bag</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROFILE CONTENT -->
+  <section class="profile-page">
+    <div class="profile-header">
+      <div class="profile-avatar">
+        <div class="avatar-circle"></div>
+      </div>
+      <div class="profile-info">
+        <h1>Hưng Nguyễn Tấn</h1>
+        <p class="member-since">Nike Member Since March 2026</p>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="profile-nav">
+      <a href="/Hưng/profile.html" class="nav-link active">Profile</a>
+      <a href="/Huy/order-history.html" class="nav-link">Orders</a>
+      <a href="/Huy/Favourites.html" class="nav-link">Favourites</a>
+      <a href="#" class="nav-link">Settings</a>
+    </div>
+
+    <!-- Interests Section -->
+    <div class="interests-section">
+      <div class="section-header">
+        <h2>Interests</h2>
+        <a href="#" class="edit-link">Edit</a>
+      </div>
+
+      <div class="interests-tabs">
+        <span class="interest-tab active">All</span>
+        <span class="interest-tab">Sports</span>
+        <span class="interest-tab">Products</span>
+        <span class="interest-tab">Teams</span>
+        <span class="interest-tab">Athletes</span>
+        <span class="interest-tab">Cities</span>
+      </div>
+
+      <p class="interests-description">
+        Add your interests to shop a collection of products that are based on what you're into.
+      </p>
+
+      <!-- Add Interests Box -->
+      <div class="add-interests-box">
+        <div class="plus-icon">+</div>
+        <p>Add Interests</p>
+      </div>
+    </div>
+
+    <!-- Find your next favourite -->
+    <div class="favourite-section">
+      <h2>Find your next favourite</h2>
+      <div class="products-slider" id="favouriteProducts">
+        <!-- JS sẽ render sản phẩm -->
+      </div>
+    </div>
+
+    <!-- Member Benefits -->
+    <div class="benefits-section">
+      <h2>Member Benefits</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <img src="/Images/member.jpg" alt="Member-Only Products">
+          <p>Member-Only Products</p>
+        </div>
+        <div class="benefit-card">
+          <img src="/Images/free.jpg" alt="Free Returns">
+          <p>Free Returns With Every Order</p>
+        </div>
+        <div class="benefit-card">
+          <img src="/Images/happy.jpg" alt="Exclusive Deals">
+          <p>Exclusive Deals</p>
+        </div>
+        <div class="benefit-card">
+          <img src="/Images/free-running.jpg" alt="Running Apps">
+          <p>Free Running and Training Apps</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nike Apps -->
+    <div class="apps-section">
+      <h2>Nike Apps</h2>
+      <div class="apps-grid">
+        <div class="app-card">
+          <img src="/Images/app-club.jpg" alt="Nike Run Club">
+          <div class="app-info">
+            <strong>Nike Run Club</strong>
+            <p>Run: Find the motivation you need to run better and more often.</p>
+            <button class="download-btn">Download</button>
+          </div>
+        </div>
+        <div class="app-card">
+          <img src="/Images/app-train.jpg" alt="Nike Training Club">
+          <div class="app-info">
+            <strong>Nike Training Club</strong>
+            <p>Train: Break a sweat to over 160 guided workouts.</p>
+            <button class="download-btn">Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <!-- Giữ nguyên footer như các trang trước của bạn -->
+    <hr class="footer-line">
+    <div class="footer-top">
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <a href="#">Find A Store</a>
+        <a href="#">Become A Member</a>
+        <a href="#">Running Shoe Finder</a>
+        <a href="#">Nike Coaching</a>
+        <a href="#">Send Us Feedback</a>
+      </div>
+      <div class="footer-column">
+        <h4>Help</h4>
+        <a href="/Hưng/help.html">Get Help</a>
+        <a href="#">Order Status</a>
+        <a href="#">Delivery</a>
+        <a href="#">Returns</a>
+        <a href="#">Payment Options</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="footer-column">
+        <h4>Company</h4>
+        <a href="/Việt/about.html">About Nike</a>
+        <a href="/Việt/news.html">News</a>
+        <a href="#">Careers</a>
+        <a href="#">Investors</a>
+        <a href="#">Sustainability</a>
+        <a href="#">Impact</a>
+      </div>
+      <div class="footer-country">🇻🇳 Vietnam</div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <p>© 2026 Nike, Inc. All rights reserved</p>
+      <div class="footer-links">
+        <a href="#">Guides</a>
+        <a href="#">Terms of Sale</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Nike Privacy Policy</a>
+        <a href="#">Privacy Settings</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/profile.js"></script>
+</body>
+</html>

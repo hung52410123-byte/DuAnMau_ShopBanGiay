@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tìm kiếm - Nike</title>
+  <link rel="stylesheet" href="/assets/style.css">           <!-- CSS chung của bạn -->
+  <link rel="stylesheet" href="/assets/search.css">          <!-- CSS riêng cho trang search -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER đơn giản (chỉ logo + search bar + Cancel) -->
+  <header class="search-header">
+    <div class="search-top">
+      <a href="/index.html" class="logo">
+        <img src="/Images/logo.png" alt="Nike Logo" width="60">
+      </a>
+      
+      <div class="search-bar-container">
+        <div class="search-input-wrapper">
+          <span class="material-icons-outlined search-icon">search</span>
+          <input type="text" id="searchInput" placeholder="Search" autocomplete="off">
+        </div>
+        <a href="/index.html"><button class="cancel-btn" onclick="window.history.back()">Cancel</button></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="search-content">
+    <!-- Popular Search Terms -->
+    <div class="popular-section">
+      <h3>Popular Search Terms</h3>
+      <div class="popular-tags" id="popularTags">
+        <span class="tag" onclick="searchTerm(this)">air max</span>
+        <span class="tag" onclick="searchTerm(this)">structure plus</span>
+        <span class="tag" onclick="searchTerm(this)">air force 1</span>
+        <span class="tag" onclick="searchTerm(this)">jordan</span>
+        <span class="tag" onclick="searchTerm(this)">nike mercurial vapor 16</span>
+        <span class="tag" onclick="searchTerm(this)">jordan 1 low</span>
+        <span class="tag" onclick="searchTerm(this)">basketball shoes</span>
+        <span class="tag" onclick="searchTerm(this)">ja 3</span>
+      </div>
+    </div>
+
+    <!-- Recent Searches -->
+    <div class="recent-section">
+      <h3>Recent searches</h3>
+      <div class="recent-list" id="recentList">
+        <!-- JS sẽ tự thêm các mục recent -->
+      </div>
+    </div>
+  </main>
+
+  <script src="/assets/search.js"></script>
+</body>
+</html>

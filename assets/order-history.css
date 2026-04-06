@@ -1,0 +1,186 @@
+/* ====================== ORDER HISTORY - PHIÊN BẢN MỚI ====================== */
+.order-history-page {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.profile-info h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.member-since {
+  color: #707072;
+  font-size: 15px;
+}
+
+/* Navigation Tabs */
+.profile-nav {
+  display: flex;
+  gap: 32px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+  margin-bottom: 40px;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #707072;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #111;
+  position: relative;
+}
+
+.nav-link.active:after {
+  content: '';
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #111;
+}
+
+/* Title */
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Order Card */
+.order-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.order-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Order Header */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-number {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.order-date {
+  color: #707072;
+  font-size: 15px;
+}
+
+/* Status */
+.status-badge {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-delivered { background: #e5f7e5; color: #00a650; }
+.status-shipped   { background: #fff3d9; color: #f59e0b; }
+
+/* Product Info */
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.product-info img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.product-info div strong {
+  font-size: 17px;
+  display: block;
+}
+
+.product-info div small {
+  color: #707072;
+  font-size: 14px;
+}
+
+/* Total */
+.order-total {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+/* Nút Xem chi tiết */
+.order-right {
+  flex-shrink: 0;
+}
+
+.btn-detail {
+  background: #111111;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-detail:hover {
+  background: #222;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .order-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn-detail {
+    width: 100%;
+  }
+}

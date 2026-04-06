@@ -1,11 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Clone</title>
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
+
 <body>
-    
+
 </body>
+<header>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="top-left">
+      <img src="/Images/jordan.jpg">
+    </div>
+
+    <div class="top-right">
+      <a href="#">Find a Store</a>
+      <span>|</span>
+      <a href="/Hưng/help.html">Help</a>
+      <span>|</span>
+      <a href="#">Join Us</a>
+      <span>|</span>
+      <a href="/Hưng/login.html">Sign In</a>
+    </div>
+  </div>
+
+
+  <!-- NAVBAR -->
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">
+      <a href="/index.html"><img src="/Images/logo.png"></a>
+    </div>
+
+    <ul class="menu">
+      <li><a href="/index.html">New & Featured</a></li>
+      <li><a href="/Phúc/categories.html">Men</a></li>
+      <li><a href="/Phúc/categories.html">Women</a></li>
+      <li><a href="/Phúc/categories.html">Kids</a></li>
+      <li><a href="/Phúc/promotion.html">Sale</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="search">
+        <a href="/Phúc/search.html"><input type="text" placeholder="Search"></a>
+      </div>
+
+      <div class="icons">
+        <a href="/Huy/Favourites.html"><span class="material-icons-outlined">favorite_border</span></a>
+        <a href="Huy/cart.html" style="color: inherit; text-decoration: none;">
+          <span class="material-icons-outlined">shopping_bag</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- DELIVERY BAR -->
+  <div class="delivery">
+    <p>Free Standard Delivery & 30-Day Free Returns</p>
+    <a href="#">Join Now View Details</a>
+  </div>
+
+</header>
+
+
+<section class="hero">
+
+  <input type="radio" name="slide" id="slide1" checked>
+  <input type="radio" name="slide" id="slide2">
+
+  <div class="slides">
+
+    <!-- SLIDE 1 -->
+
+    <div class="slide">
+
+      <img src="/Images/lebron.avif">
+
+      <div class="hero-text">
+        <p class="subtitle">LeBron XXIII</p>
+        <h1>‘LEBRONTO’</h1>
+        <p>Only one King can rule over a city with an iron fist.</p>
+
+        <div class="buttons">
+          <a href="/Phúc/categories.html"><button>Shop Now</button></a>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- SLIDE 2 -->
+
+    <div class="slide">
+
+      <video autoplay muted loop playsinline>
+        <source src="/Images/video.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-text">
+
+        <h1>AIR MAX 95</h1>
+        <p>Above the Influence</p>
+
+        <div class="buttons">
+          <a href="/Phúc/categories.html"><button>Shop</button></a>
+          <button>Watch</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- arrows -->
+
+  <label for="slide2" class="arrow right">&#10095;</label>
+  <label for="slide1" class="arrow left">&#10094;</label>
+
+
+  <!-- dots -->
+
+  <div class="dots">
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+  </div>
+
+</section>
+
+<section class="featured">
+
+  <h2>Featured</h2>
+
+  <div class="featured-grid">
+
+    <div class="featured-card">
+      <img src="images/img2.avif">
+      <div class="featured-text">
+        <p>Nike Zenvy</p>
+        <h3>Freedom to Flow</h3>
+        <a href="/Phúc/categories.html"><button>Shop</button></a>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <img src="images/img1.avif">
+      <div class="featured-text">
+        <p>ACG Explore</p>
+        <h3>Gear up, get lost</h3>
+        <a href="/Phúc/categories.html"><button>Shop</button></a>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <img src="images/run.avif">
+      <div class="featured-text">
+        <p>Gear Up</p>
+        <h3>Race Leader Starter Pack</h3>
+        <a href="/Phúc/categories.html"><button>Shop</button></a>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <img src="images/jordan1.avif">
+      <div class="featured-text">
+        <p>Air Jordan Shoten Pack</p>
+        <h3>An AJ pack stitched with history</h3>
+        <a href="/Phúc/categories.html"><button>Shop</button></a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="products">
+
+  <div class="products-header">
+
+    <h2>Latest in Basketball</h2>
+
+    <div class="products-nav">
+      <a href="#">View All</a>
+
+      <button id="prev">❮</button>
+      <button id="next">❯</button>
+    </div>
+
+  </div>
+
+
+  <div class="products-slider" id="slider">
+
+    <div class="product-card">
+      <img src="Images/shoe1.avif">
+      <h3>Jordan Heir Series 2 PF</h3>
+      <p class="category">Women's Basketball Shoes</p>
+      <p class="price">3,239,000₫</p>
+    </div>
+
+    <div class="product-card">
+      <img src="Images/shoe2.avif">
+      <h3>Kobe IX Elite Low EM Proto</h3>
+      <p class="category">Basketball Shoes</p>
+      <p class="price">5,279,000₫</p>
+    </div>
+
+    <div class="product-card">
+      <img src="Images/shoe3.avif">
+      <h3>Luka 5 'Luka Lifestyle' PF</h3>
+      <p class="category">Basketball Shoes</p>
+      <p class="price">3,829,000₫</p>
+    </div>
+
+    <div class="product-card">
+      <img src="Images/shoe4.avif">
+      <h3>Giannis Freak 7 EP</h3>
+      <p class="category">Basketball Shoes</p>
+      <p class="price">3,239,000₫</p>
+    </div>
+
+    <div class="product-card">
+      <img src="Images/shoe5.avif">
+      <h3>Air Jordan 40 PF</h3>
+      <p class="category">Basketball Shoes</p>
+      <p class="price">5,869,000₫</p>
+    </div>
+
+    <div class="product-card">
+      <img src="Images/shoe6.avif">
+      <h3>LeBron XXIII Elite</h3>
+      <p class="category">Basketball Shoes</p>
+      <p class="price">6,609,000₫</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="sport">
+
+  <div class="sport-header">
+
+    <h2>Shop by Sport</h2>
+
+    <div class="sport-nav">
+      <button id="sport-prev">❮</button>
+      <button id="sport-next">❯</button>
+    </div>
+
+  </div>
+
+
+  <div class="sport-slider" id="sport-slider">
+
+    <div class="sport-card">
+      <img src="Images/run1.avif  ">
+      <h3>Running</h3>
+    </div>
+
+    <div class="sport-card">
+      <img src="Images/football.avif">
+      <h3>Football</h3>
+    </div>
+
+    <div class="sport-card">
+      <img src="Images/basketball.avif">
+      <h3>Basketball</h3>
+    </div>
+
+    <div class="sport-card">
+      <img src="Images/trainning.avif">
+      <h3>Gym & Training</h3>
+    </div>
+
+    <div class="sport-card">
+      <img src="Images/yoga.avif">
+      <h3>Yoga</h3>
+    </div>
+
+    <div class="sport-card">
+      <img src="Images/golf.avif">
+      <h3>Golf</h3>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+
+  const sportSlider = document.getElementById("sport-slider");
+
+  document.getElementById("sport-next").onclick = () => {
+    sportSlider.scrollBy({
+      left: 450,
+      behavior: "smooth"
+    });
+  };
+
+  document.getElementById("sport-prev").onclick = () => {
+    sportSlider.scrollBy({
+      left: -450,
+      behavior: "smooth"
+    });
+  };
+
+</script>
+<script>
+
+  const slider = document.getElementById("slider");
+
+  document.getElementById("next").onclick = () => {
+    slider.scrollBy({
+      left: 450,
+      behavior: "smooth"
+    });
+  };
+
+  document.getElementById("prev").onclick = () => {
+    slider.scrollBy({
+      left: -450,
+      behavior: "smooth"
+    });
+  };
+
+</script>
+
+<section class="spotlight">
+
+  <h1>SPOTLIGHT</h1>
+
+  <p>
+    Classic silhouettes and cutting-edge innovation to build your game from the ground up.
+  </p>
+
+
+  <div class="spotlight-grid">
+
+    <a href="#" class="spot-item">
+      <img src="images/air-jordan.avif">
+      <span>Air Jordan 1 Low</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/dunk.avif">
+      <span>Dunk</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/air-force.avif">
+      <span>Air Force 1</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/vomero.avif">
+      <span>Vomero Plus</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/pegasus.avif">
+      <span>Pegasus Premium</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/collection.avif">
+      <span>24.7 Collection</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/tenis.avif">
+      <span>Tennis Apparel</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/vaporfly.avif">
+      <span>Vaporfly</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/sabrina.avif">
+      <span>Sabrina</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/cortez.avif">
+      <span>Cortez</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/metcon.avif">
+      <span>Metcon10</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/nba.avif">
+      <span>NBA Jerseys</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/shox.avif">
+      <span>Shox</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/air-max.avif">
+      <span>Air Max DN</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/zoom.avif">
+      <span>Zoomfly 6</span>
+    </a>
+
+    <a href="#" class="spot-item">
+      <img src="images/shirt.avif">
+      <span>Graphic Tees</span>
+    </a>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+
+  <hr class="footer-line">
+  
+  <div class="footer-top">
+  
+  <div class="footer-column">
+  <h4>Resources</h4>
+  <a href="#">Find A Store</a>
+  <a href="#">Become A Member</a>
+  <a href="#">Running Shoe Finder</a>
+  <a href="#">Nike Coaching</a>
+  <a href="#">Send Us Feedback</a>
+  </div>
+  
+  <div class="footer-column">
+  <h4>Help</h4>
+  <a href="/Hưng/help.html">Get Help</a>
+  <a href="#">Order Status</a>
+  <a href="#">Delivery</a>
+  <a href="#">Returns</a>
+  <a href="#">Payment Options</a>
+  <a href="#">Contact Us</a>
+  </div>
+  
+  <div class="footer-column">
+  <h4>Company</h4>
+  <a href="/Việt/about.html">About Nike</a>
+  <a href="/Việt/news.html">News</a>
+  <a href="#">Careers</a>
+  <a href="#">Investors</a>
+  <a href="#">Sustainability</a>
+  <a href="#">Impact</a>
+  <a href="#">Report a Concern</a>
+  </div>
+  
+  <div class="footer-country">
+
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+    <circle cx="12" cy="12" r="10" stroke="#707072" stroke-width="1.5"/>
+    <path d="M2 12H22" stroke="#707072" stroke-width="1.5"/>
+    <path d="M12 2C15 6 15 18 12 22C9 18 9 6 12 2Z" stroke="#707072" stroke-width="1.5"/>
+    </svg>
+    
+    <span>Vietnam</span>
+    
+    </div>
+  
+  </div>
+  <hr>
+
+
+  <div class="footer-bottom">
+
+    <p>© 2026 Nike, Inc. All rights reserved</p>
+
+    <div class="footer-links">
+      <a href="#">Guides</a>
+      <a href="#">Terms of Sale</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Nike Privacy Policy</a>
+      <a href="#">Privacy Settings</a>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
 </html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Nike Member</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/register.css">   <!-- CSS riêng -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+
+    <div class="register-wrapper">
+        <div class="register-container">
+
+            <!-- Logo -->
+            <div class="register-logo">
+                <a href="/index.html"><img src="/Images/logo.png" alt="Nike" width="60"></a>
+                <img src="/Images/jordan.jpg" alt="Jordan" width="45">
+            </div>
+
+            <h1 class="register-title">Now let's make you a Nike Member.</h1>
+            <p class="register-info-text">
+                We've sent a code to <strong>tonguyentanhung...</strong> 
+                <a href="#" class="edit-link">Edit</a>
+            </p>
+
+            <form id="registerForm" class="register-form">
+
+                <div class="register-input-group">
+                    <input type="text" id="code" required>
+                    <label for="code">Code*</label>
+                    <span class="register-icon-right material-icons-outlined">refresh</span>
+                </div>
+                <p class="register-resend-text">Resend code in <span id="countdown">30</span>s</p>
+
+                <div class="register-row">
+                    <div class="register-input-group">
+                        <input type="text" id="firstname" required>
+                        <label for="firstname">First Name*</label>
+                    </div>
+                    <div class="register-input-group">
+                        <input type="text" id="surname" required>
+                        <label for="surname">Surname*</label>
+                    </div>
+                </div>
+
+                <div class="register-input-group">
+                    <input type="password" id="password" required>
+                    <label for="password">Password*</label>
+                    <span class="register-icon-right material-icons-outlined" id="togglePassword">visibility</span>
+                </div>
+
+                <ul class="register-password-requirements">
+                    <li>✕ Minimum of 8 characters</li>
+                    <li>✕ Uppercase, lowercase letters and one number</li>
+                </ul>
+
+                <p class="register-label-static">Date of Birth</p>
+                <div class="register-row register-dob-row">
+                    <div class="register-input-group">
+                        <input type="number" id="day" placeholder="DD" min="1" max="31" required>
+                        <label for="day">Day*</label>
+                    </div>
+                    <div class="register-input-group">
+                        <input type="number" id="month" placeholder="MM" min="1" max="12" required>
+                        <label for="month">Month*</label>
+                    </div>
+                    <div class="register-input-group">
+                        <input type="number" id="year" placeholder="YYYY" min="1900" max="2026" required>
+                        <label for="year">Year*</label>
+                    </div>
+                </div>
+
+                <div class="register-checkbox-group">
+                    <label class="register-checkbox-container">
+                        <input type="checkbox" checked>
+                        <span class="register-checkmark"></span>
+                        <span class="register-label-text">
+                            Sign up for emails to get updates from Nike on products, offers and your Member benefits.
+                        </span>
+                    </label>
+                </div>
+
+                <div class="register-checkbox-group">
+                    <label class="register-checkbox-container">
+                        <input type="checkbox" checked>
+                        <span class="register-checkmark"></span>
+                        <span class="register-label-text">
+                            I agree to Nike's <a href="/Việt/privacy.html" class="register-link">Privacy Policy</a> and 
+                            <a href="/Hưng/terms.html" class="register-link">Terms of Use</a>.
+                        </span>
+                    </label>
+                </div>
+
+                <button type="submit" class="register-btn-submit">
+                    Tạo tài khoản
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/assets/register.js"></script>
+</body>
+</html>

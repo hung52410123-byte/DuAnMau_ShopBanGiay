@@ -1,0 +1,277 @@
+/* Thiết lập cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* === Header / Navbar === */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #111;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nike-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.main-nav {
+    display: flex;
+    gap: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.9rem;
+}
+
+.search-icon {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* === Hero Section === */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.hero-title {
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 13vw; /* Dùng vw để chữ to ngập màn hình giống ảnh */
+    line-height: 0.85;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-subtitle {
+    font-style: italic;
+    font-size: 1.2rem;
+    font-family: "Georgia", serif; /* Font chữ có chân in nghiêng cho dấu * */
+    color: #ccc;
+}
+
+/* === Featured Story Section === */
+.featured-story {
+    display: flex;
+    padding: 0 40px 40px 40px;
+    gap: 40px;
+    position: relative;
+    align-items: center;
+}
+
+.story-image {
+    flex: 2;
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.story-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.story-content h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.story-content p {
+    color: #999;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.slide-controls {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+    color: #999;
+    cursor: pointer;
+}
+
+.slide-controls i:hover {
+    color: #fff;
+}
+
+/* === Mini Newsroom Cards === */
+.newsroom-mini {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    gap: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.mini-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.mini-card img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.mini-card p {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* === Research Lab Section === */
+.research-lab {
+    padding: 60px 40px;
+}
+
+.section-heading {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.lab-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.lab-card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.lab-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.lab-card p {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* === Footer === */
+.site-footer {
+    padding: 60px 40px 30px 40px;
+    border-top: 1px solid #222;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 150px;
+}
+
+.link-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link-col a {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.footer-social a:hover {
+    background-color: #666;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    font-size: 0.75rem;
+    color: #777;
+}
+
+.bottom-links {
+    display: flex;
+    gap: 20px;
+}
+
+.bottom-links a {
+    color: #777;
+}
+
+.bottom-links a:hover {
+    color: #fff;
+}

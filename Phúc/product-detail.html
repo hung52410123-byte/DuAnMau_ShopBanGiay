@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordan Trunner LX - Nike</title>
+  <link rel="stylesheet" href="/assets/style.css"> <!-- CSS chung của index -->
+  <link rel="stylesheet" href="/assets/product-detail.css"> <!-- CSS riêng cho product detail -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER (giữ nguyên như index.html của bạn) -->
+  <header>
+    <div class="topbar">
+      <div class="top-left"><img src="/Images/jordan.jpg" alt="Jordan"></div>
+      <div class="top-right">
+        <a href="#">Find a Store</a><span>|</span>
+        <a href="#">Help</a><span>|</span>
+        <a href="#">Join Us</a><span>|</span>
+        <a href="/Hưng/login.html">Sign In</a>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="logo"><img src="/Images/logo.png" alt="Nike Logo"></div>
+      <ul class="menu">
+        <li><a href="/index.html">New & Featured</a></li>
+        <li><a href="/Phúc/categories.html">Men</a></li>
+        <li><a href="/Phúc/categories.html">Women</a></li>
+        <li><a href="/Phúc/categories.html">Kids</a></li>
+        <li class="active"><a href="/Phúc/promotion.html">Sale</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="search"><input type="text" placeholder="Search"></div>
+        <div class="icons">
+          <a href="/Huy/Favourites.html"><span class="material-icons-outlined">favorite_border</span></a>
+          <a href="/Huy/cart.html" style="color:inherit;text-decoration:none;">
+            <span class="material-icons-outlined">shopping_bag</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="delivery">
+      <p>Free Standard Delivery & 30-Day Free Returns <a href="#">Join Now View Details</a></p>
+    </div>
+  </header>
+
+  <!-- PRODUCT DETAIL -->
+  <section class="product-detail-page">
+    <div class="product-main">
+
+      <!-- Thumbnails bên trái -->
+      <!-- ==================== THUMBNAIL GALLERY ==================== -->
+      <div class="thumbnail-gallery" id="thumbnailGallery">
+        
+        <!-- 1. Ảnh chính (Main) - sẽ hiển thị đầu tiên -->
+        <div class="thumb active" data-src="/Images/trunner.avif">
+            <img src="/Images/trunner.avif" alt="Jordan Trunner LX Main">
+        </div>
+
+        <!-- 2. Ảnh thứ hai -->
+        <div class="thumb" data-src="/Images/trunner-end.avif">
+            <img src="/Images/trunner-end.avif" alt="Jordan Trunner LX End">
+        </div>
+
+        <!-- 3. Ảnh thứ ba -->
+        <div class="thumb" data-src="/Images/duo-trunner.avif">
+            <img src="/Images/duo-trunner.avif" alt="Duo Trunner">
+        </div>
+
+        <!-- 4. Ảnh thứ tư -->
+        <div class="thumb" data-src="/Images/green-trunner.avif">
+            <img src="/Images/green-trunner.avif" alt="Green Trunner">
+        </div>
+
+        <div class="thumb" data-src="/Images/trunner1.avif">
+          <img src="/Images/trunner1.avif" alt="Green Trunner">
+        </div>
+
+        <div class="thumb" data-src="/Images/trunner2.avif">
+          <img src="/Images/trunner2.avif" alt="Green Trunner">
+        </div>
+
+      </div>
+
+      <!-- Main Media (ảnh lớn) -->
+      <div class="main-media-wrapper">
+        <div class="main-image" id="mainMediaContainer"></div>
+        <button class="image-nav left" id="prevBtn">‹</button>
+        <button class="image-nav right" id="nextBtn">›</button>
+      </div>
+
+      <!-- Thông tin sản phẩm bên phải -->
+      <div class="product-info">
+        <h1>Jordan Trunner LX</h1>
+        <p class="category">Women's Shoes</p>
+        
+        <div class="price-box">
+          <span class="current-price">3,063,000đ</span>
+          <span class="old-price">3,829,000đ</span>
+          <span class="discount">20% off</span>
+        </div>
+
+        <div class="size-section">
+          <div class="size-header">
+            <span>Select Size</span>
+            <a href="#" class="size-guide">Size Guide</a>
+          </div>
+          <div class="size-grid">
+            <button class="size-btn">EU 35.5</button>
+            <button class="size-btn">EU 36</button>
+            <button class="size-btn">EU 36.5</button>
+            <button class="size-btn">EU 37.5</button>
+            <button class="size-btn">EU 38</button>
+            <button class="size-btn">EU 38.5</button>
+            <button class="size-btn">EU 39</button>
+            <button class="size-btn">EU 40</button>
+            <button class="size-btn">EU 40.5</button>
+            <button class="size-btn">EU 41</button>
+            <button class="size-btn">EU 42</button>
+            <button class="size-btn">EU 42.5</button>
+            <button class="size-btn">EU 43</button>
+            <button class="size-btn">EU 44</button>
+            <button class="size-btn">EU 44.5</button>
+          </div>
+        </div>
+
+        <a href="/Huy/cart.html"><button class="add-to-bag">Add to Bag</button></a>
+        <button class="favourite-btn">
+          Favourite <span class="material-icons-outlined">favorite_border</span>
+        </button>
+
+        <div class="description">
+          <p>The Trunner is back and better than ever. We lowered the collar and brought in breathable knits, durable canvas and synthetic leather for a comfortable feel. A forefoot strap gives you an adjustable fit. It's comfort and style in one versatile package.</p>
+          <ul>
+            <li><strong>Colour Shown:</strong> Black/Coconut Milk/Orange Blaze/White</li>
+            <li><strong>Style:</strong> IM6531-001</li>
+            <li><strong>Country/Region of Origin:</strong> Vietnam</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- YOU MIGHT ALSO LIKE -->
+    <div class="also-like-section">
+      <h2>You Might Also Like</h2>
+      <div class="also-like-grid">
+        <div class="product-card-small">
+          <img src="/Images/jordan1.avif" alt="Jordan Pointe">
+          <h4>Jordan Pointe</h4>
+          <p>Women's Shoes</p>
+          <p class="price">3,519,000đ</p>
+        </div>
+        <div class="product-card-small">
+          <img src="/Images/jordan1low.avif" alt="Nike Zoom Vomero 5">
+          <h4>Nike Zoom Vomero 5</h4>
+          <p>Women's shoes with reflective accents</p>
+          <p class="price">3,759,200đ</p>
+        </div>
+        <div class="product-card-small">
+          <img src="/Images/dunk.avif" alt="Air Jordan Mule">
+          <h4>Air Jordan Mule</h4>
+          <p>Golf Shoes</p>
+          <p class="price">2,929,000đ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (giữ nguyên như bạn đã có) -->
+  <footer class="footer">
+    <hr class="footer-line">
+    <div class="footer-top">
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <a href="#">Find A Store</a>
+        <a href="#">Become A Member</a>
+        <a href="#">Running Shoe Finder</a>
+        <a href="#">Nike Coaching</a>
+        <a href="#">Send Us Feedback</a>
+      </div>
+      <div class="footer-column">
+        <h4>Help</h4>
+        <a href="#">Get Help</a>
+        <a href="#">Order Status</a>
+        <a href="#">Delivery</a>
+        <a href="#">Returns</a>
+        <a href="#">Payment Options</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="footer-column">
+        <h4>Company</h4>
+        <a href="#">About Nike</a>
+        <a href="#">News</a>
+        <a href="#">Careers</a>
+        <a href="#">Investors</a>
+        <a href="#">Sustainability</a>
+        <a href="#">Impact</a>
+      </div>
+      <div class="footer-country">🇻🇳 Vietnam</div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <p>© 2026 Nike, Inc. All rights reserved</p>
+      <div class="footer-links">
+        <a href="#">Guides</a>
+        <a href="#">Terms of Sale</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Nike Privacy Policy</a>
+        <a href="#">Privacy Settings</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/product-detail.js"></script>
+</body>
+</html>

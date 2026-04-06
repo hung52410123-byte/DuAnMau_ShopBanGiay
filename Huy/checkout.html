@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - Nike</title>
+  <link rel="stylesheet" href="/assets/chekout.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="/index.html"><img src="/Images/logo.png" alt="" width="60"></a></div>
+    <div class="order-info">
+      <span>Viettel 12032484 & VTI 12032487</span>
+      <div class="icons">
+        <i class="fas fa-comment-dots"></i>
+        <i class="fas fa-shopping-bag"></i>
+      </div>
+    </div>
+  </header>
+
+  <main class="checkout-container">
+    <section class="delivery-section">
+      <h2>Delivery</h2>
+
+      <div class="form-group email-group">
+        <label>Email *</label>
+        <input type="email" value="nguyentanhung22072009@gmail.com" required/>
+        <span class="verified">•</span>
+        <p class="note">A confirmation email will be sent after checkout.</p>
+      </div>
+
+      <h3>Enter your name and address:</h3>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name *</label>
+          <input type="text" placeholder="" required/>
+        </div>
+        <div class="form-group">
+          <label>Last Name *</label>
+          <input type="text" placeholder="" required/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Street address or postcode *</label>
+        <input type="text" placeholder="Q. Start typing a street address or postcode *" required/>
+        <p class="note small">We do not ship to P.O. boxes</p>
+        <a href="#" class="manual-link">Enter address manually</a>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number *</label>
+        <input type="tel" placeholder="" required/>
+        <p class="note">A carrier might contact you to confirm delivery.</p>
+      </div>
+
+      <label class="checkbox-label">
+        <input type="checkbox" checked/>
+        Billing matches shipping address
+      </label>
+
+      <h2>Shipping</h2>
+      <div class="shipping-info">
+        <p>250,000₫ Shipping</p>
+        <p>Shipment One</p>
+        <p>Arrives Thu, Mar 26 - Thu, Apr 2</p>
+      </div>
+    </section>
+
+    <aside class="order-summary">
+      <div class="summary-card">
+        <h3>Order Summary</h3>
+
+        <div class="summary-item">
+          <span>Subtotal</span>
+          <span>3,063,000₫</span>
+        </div>
+        <div class="summary-item">
+          <span>Shipping</span>
+          <span>250,000₫</span>
+        </div>
+
+        <div class="free-shipping">
+          <p>Add 2,797,000₫ more to earn Free Shipping!</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 88%;"></div>
+          </div>
+          <p>5,000,000₫</p>
+        </div>
+
+        <div class="summary-item total">
+          <span>Total</span>
+          <span>3,313,000₫</span>
+        </div>
+
+        <p class="delivery-date">Arrives Thu, Mar 26 - Thu, Apr 2</p>
+
+        <div class="product-preview">
+          <img src="/Images/trunner.avif" 
+               alt="Nike Metcon 10 Men's Workout Shoes"/>
+          <div class="product-info">
+            <p>Jordan Trunner LX
+            </p>
+            <p>Women Shoes</p>
+            <p>Qty 1</p>
+            <p>Size EU 40</p>
+            <p>3,063,000₫</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <section class="payment-section">
+    <h2>Payment</h2>
+
+    <div class="promo">
+      <label>Have a promo code?</label>
+      <div class="promo-input">
+        <input type="text" placeholder="Promo"/>
+        <button>Apply</button>
+      </div>
+      <p class="limit">Limit 1 promo per order.</p>
+    </div>
+
+    <div class="payment-methods">
+      <button class="method active">
+        <i class="fas fa-credit-card"></i> Credit or Debit Card
+      </button>
+      <button class="method">
+        <i class="fab fa-paypal"></i> PayPal
+      </button>
+      <button class="method">
+        <i class="fab fa-google-pay"></i> G Pay
+      </button>
+    </div>
+
+    <div class="card-details">
+      <h4>Enter your payment details:</h4>
+
+      <div class="form-group">
+        <label>Name on card *</label>
+        <input type="text" required/>
+      </div>
+
+      <div class="form-group">
+        <label>Card number *</label>
+        <input type="text" required/>
+        <i class="fas fa-lock lock-icon"></i>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>MM/YY *</label>
+          <input type="text" placeholder="MM/YY" required/>
+        </div>
+        <div class="form-group">
+          <label>Security Code *</label>
+          <input type="text" required/>
+          <a href="#" class="help-link">Where's my Security Code?</a>
+        </div>
+      </div>
+
+      <label class="checkbox-label">
+        <input type="checkbox"/> Save card for later use
+      </label>
+
+      <label class="checkbox-label">
+        <input type="checkbox"/> Set as default card
+      </label>
+
+      <p class="terms">
+        By clicking Place Order, you agree to the <a href="#">ESW Terms and Conditions</a>.
+      </p>
+
+      <button class="place-order">Place Order</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <span class="location">Vietnam</span>
+      <span>©2026 NIKE, Inc. All Rights Reserved</span>
+      <div class="footer-links">
+        <a href="#">Terms of Use</a>
+        <span> • </span>
+        <a href="#">Terms of Sale</a>
+        <span> • </span>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  
+    <div class="payment-icons">
+      <img src="/Images/visa.png" alt="VISA" class="payment-icon"/>
+      <img src="/Images/MasterCard.png" alt="Mastercard" class="payment-icon"/>
+      <img src="/Images/amex.jpg" alt="American Express" class="payment-icon"/>
+      <img src="/Images/discover.png" alt="DISCOVER" class="payment-icon"/>
+      <img src="/Images/paypal.png" alt="PayPal" class="payment-icon"/>
+      <img src="/Images/gpay.webp" alt="G Pay" class="payment-icon"/>
+    </div>
+  
+    <p class="footer-note">©2026 NIKE, Inc. All Rights Reserved</p>
+  </footer>
+</body>
+</html>
