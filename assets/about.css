@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #111;
+    background-color:black;
     color: #fff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -28,7 +28,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: #111;
+    background-color: black;
 }
 
 .logo-area {
